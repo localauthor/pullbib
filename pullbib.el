@@ -136,7 +136,7 @@ instead."
             (progn
               (with-temp-message msg
                 (pullbib-curl url
-                              "--no-progress-meter"
+;;                              "--no-progress-meter"
                               (concat "-o" (expand-file-name file))))
               (message (concat msg "done.")))
           (curl-error (with-current-buffer pullbib-shell-output-buffer
